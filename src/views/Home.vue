@@ -1,15 +1,18 @@
 <template>
   <div class="home">
-    <Search @showSearch="controlSearch"></Search>
+    <MyNav @showSearch="controlSearch"></MyNav>
+    <Search></Search>
   </div>
 </template>
 
 
 <script>
-  import Search from '@/components/Hello.vue'
+  import MyNav from '@/components/Hello.vue'
+  import Search from '@/views/Search'
   export default {
     name: 'home',
     components: {
+      MyNav,
       Search
     },
     data () {
